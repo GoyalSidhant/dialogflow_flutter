@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "farmtech-fh9j",
+  "private_key_id": "3db6e0409c7153d0e0291aad7a71bfbba63e773d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCf7ODfAh9DWwps\ndOVSrS1pn6b2r8iK8sRmY4suiDHC5o4jtbLyA9c2Gc2Qvc8PvmwRqd015ZmCgR5H\nj93VILXVCzYipcltu5gaN9jsw8phatxz1eq2nZlcm0pbeGhqWYZv2D2zyj7WEPSy\nAnFaug05qtAi3EVWApv7YwR3IKrcxaI7fKhQAwu6ed79RiW9UqKz7GEwcFcUamT5\nn82FfpcPikm333f3A7P/TAQhdiyhJnTtFQ9Kr109lxaszaZUGEwAC2A60NIFo+W/\nUtAOfiOq5xZGFKIquiXprqXWMLbvZa4dV5wcg6RU4RTmiGYLi0AdlOjYlL4gA42K\niOx5N+QtAgMBAAECggEAJOwA7KumQRwzN1/zk9dkjSatWvWxdJbgzgy8VOVfq7Ij\n7c2kvygw1w40/e48cFOTyq4vYqKcAtvBfF8UJYD0SffZKz2gWAO/9YmgPOVlA4Gy\n3NFt63RONGmrzJtra+Y4WfkQIcKXKD/o5nIW7o3WwNIVVH8LSPS4Q10UalZx7B8c\n/tVZWQjetN1G1ieh9enmt5rvnkMyX2CNcKDrp6Ghcw5K7RLgc1kb+ZcTZuVFsfRl\n5lHnLpd+YZKdhVqqT7TmPrwCZXIX7t6X297Jtp5UbWp5qv92KDJdaNbhPVD4nPI8\nCPhqTFMPrnYXoLnI4SaAuj6fiAvBgRU5xdCLoWBIVwKBgQDbQ5xP9wnea9PH/jcT\nZhiaAXr7R817j1TZxQxE2VOBoQ4ETILIjpsbo4vEoZs9j05e0hSx9UN1NPhBFCko\nf+I6/LC+6vB1m+jkqpfGb/kJiBr6IMDpMuqx2ImSAiZ1OThKkBgNP4Jw4Hh4iqgl\nzHRu4U9yguNFjjCgG+ZLx9QGywKBgQC6uC+GcCqPkk9dnoz+Kdnci6tebU4JtXD2\ndpkydWDTuL/Utm25AX6x6XEzTzed/wlZj0inKW+2tll/LjudB9Ze6qFgbTcGSPt/\nU4IAKa6LqVEycjT4AdwzTeOoMRf0RcrVUsADuv+6mTzY2VxWKIMYdCirSjENJpFK\ndGhqzkXp5wKBgQCVKnzn5c9f8olEUIzVdKqd8w3gbyu6uHroH+bF2/e0g4XOpOKA\nYIvjFLMcVTkQezK8zTzpCEsZLK0LURTjCYU1zfzMFXb6+9NH5UqV5E1PD7oSmj/D\nJjGGRiLpIu9Y5lGGYFsMgD1UX1F16BaWiG5ZlIyBAcxt4FryQai9uzdiWwKBgDB1\ntxfsKo+iiGiiyrL4R6u+sBZMxhEs/wloVHBNGHk6nMbnJej7I1enX5LSf3vJAjM1\nRcTkszK3dtjUNfKWYyO1P3bYQYynCmbMVJQYPU3P/tvZ2jd3vB+wmmI/g5kJOBBP\nbrhJIy/Zr3oUR6uwzf1dwGRcWAiytsidF7CIooqHAoGAbNyWbroesc7452EbRWt6\nUybMwr5bXevqNy7ks6liNbrs6k141cZ3YVR5D3OVBi4a2/nu/dsQOaWV0HJaXuQ1\ng/Z8kBTpczVHVO09X/kHFcMqJwjeroaPwDtGflSafMkVzGKIPlxcmfGx8gQQGnz6\n/MEPHAX1eVaUm4koCD55WzM=\n-----END PRIVATE KEY-----\n",
+  "client_email": "farm-97@farmtech-fh9j.iam.gserviceaccount.com",
+  "client_id": "109952293840259174129",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/farm-97%40farmtech-fh9j.iam.gserviceaccount.com"
+}
