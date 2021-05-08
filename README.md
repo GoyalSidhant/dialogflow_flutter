@@ -1,6 +1,5 @@
-# dialogflow_flutter
+# dialogflow_flutter package for Flutter apps.
 
-Flutter plugn to use Dialogflow 
 
 ## Getting Started
 
