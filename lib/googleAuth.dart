@@ -9,12 +9,13 @@ class AuthGoogle {
   final String fileJson;
   final List<String> scope;
   final String sessionId;
-  AuthGoogle({@required this.fileJson,this.scope=const ["https://www.googleapis.com/auth/cloud-platform"],this.sessionId="123"});
-
+  AuthGoogle(
+      {@required this.fileJson,
+      this.scope = const ["https://www.googleapis.com/auth/cloud-platform"],
+      this.sessionId = "123"});
 
   String _projectId;
   AccessCredentials _credentials;
-
 
   Future<String> getReadJson() async {
     String data = await rootBundle.loadString(this.fileJson);
@@ -31,28 +32,29 @@ class AuthGoogle {
     return this;
   }
 
-  bool get hasExpired{
+  bool get hasExpired {
     return _credentials.accessToken.hasExpired;
   }
 
-  String get getSessionId{
+  String get getSessionId {
     return sessionId;
   }
-  String get getProjectId{
+
+  String get getProjectId {
     return _projectId;
   }
 
-  String get getToken{
+  String get getToken {
     return _credentials.accessToken.data;
   }
 
-  Future<Response> post(url, {Map<String, String> headers, body,
-    Encoding encoding}) async{
+  Future<Response> post(url,
+      {Map<String, String> headers, body, Encoding encoding}) async {
     if (!hasExpired) {
-      return await http.post(Uri.parse(url), headers: headers, body:body);
+      return await http.post(Uri.parse(url), headers: headers, body: body);
     } else {
       await build();
-      return await http.post(Uri.parse(url), headers: headers, body:body);
+      return await http.post(Uri.parse(url), headers: headers, body: body);
     }
   }
 }
