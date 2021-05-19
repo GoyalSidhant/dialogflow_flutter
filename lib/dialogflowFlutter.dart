@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:dialogflow_flutter/googleAuth.dart';
-import 'package:flutter/services.dart';
 import 'dart:convert';
 import 'dart:io';
 import 'package:meta/meta.dart';
@@ -112,15 +111,6 @@ class AIResponse {
 }
 
 class DialogFlow {
-  /* static void registerWith(Registrar registrar) {
-    final MethodChannel channel = MethodChannel(
-        'plugins.flutter.io/url_launcher',
-        const StandardMethodCodec(),
-        registrar.messenger);
-    final DialogFlow instance = DialogFlow();
-    channel.setMethodCallHandler();
-  } */
-
   final AuthGoogle authGoogle;
   final String language;
   final String payload;

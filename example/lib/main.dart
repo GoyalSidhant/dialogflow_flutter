@@ -1,7 +1,7 @@
 import 'package:bubble/bubble.dart';
 import 'package:dialogflow_flutter/googleAuth.dart';
 import 'package:flutter/material.dart';
-import 'package:dialogflow_flutter/dialogflow_flutter.dart';
+import 'package:dialogflow_flutter/dialogflowFlutter.dart';
 
 void main() {
   runApp(MyApp());

@@ -1,6 +1,6 @@
 name: dialogflow_flutter
 description: Flutter plugn to use Dialogflow 
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/GoyalSidhant/dialogflow_flutter
 
 environment:
@@ -31,5 +31,6 @@ flutter:
         pluginClass: DialogflowFlutterPlugin
       ios:
         pluginClass: DialogflowFlutterPlugin
+      
 
   
