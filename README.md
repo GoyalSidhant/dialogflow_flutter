@@ -1,6 +1,6 @@
 # dialogflow_flutter 
 
-dialogflow_flutter is a flutter plugin that helps user to use Dailogflow chatbot in there applications
+dialogflow_flutter is a flutter plugin that helps the user to use Dialogflow chatbot in their applications
 
 ### ⭐ the repo to support the project. Thanks!
 
