@@ -1,14 +1,27 @@
-# dialogflow_flutter package for Flutter apps.
+# dialogflow_flutter 
+
+dialogflow_flutter is a flutter plugin that helps user to use Dailogflow chatbot in there applications
+
+### :heart: Star :heart: the repo to support the project. Thanks!
+
+## Installation
+
+* Add this to your package's pubspec.yaml file:
+```
+dependencies:
+  dialogflow_flutter: ^0.0.3
+```
+* You can install packages from the command line:
+  with Flutter:
+```
+$ flutter packages get
+```
+
+## ScreenShot
+
+<p align="center"><img width=12.5% src="https://github.com/GoyalSidhant/dialogflow_flutter/blob/main/screenshot.png"></p>
 
 
-## Getting Started
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
 
