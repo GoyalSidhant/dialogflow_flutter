@@ -23,7 +23,7 @@ $ flutter packages get
 
 | Android | iOS | MacOS | Web | Linux | Windows |
 | :-----: | :-: | :---: | :-: | :---: | :-----: |
-|   ✔️    | ✔️  |  ✔️   | ✔️  |     |   ✔️    |
+|   ✔️    | ✔️  |  ✔️   |   |   ✔️  |   ✔️    |
 
 ---
 ## ScreenShot
