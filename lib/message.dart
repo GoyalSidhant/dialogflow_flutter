@@ -8,8 +8,8 @@ class ListTextDialogflow {
 }
 
 class ImageDialogflow {
-  String imageUri;
-  String accessibilityText;
+  String? imageUri;
+  String? accessibilityText;
 
   ImageDialogflow(Map response) {
     this.imageUri = response['imageUri'];
@@ -18,7 +18,7 @@ class ImageDialogflow {
 }
 
 class QuickReplies {
-  String title;
+  String? title;
   List<String> quickReplies = [];
 
   QuickReplies(Map response) {
@@ -29,8 +29,8 @@ class QuickReplies {
 }
 
 class ButtonDialogflow {
-  String text;
-  String postback;
+  String? text;
+  String? postback;
 
   ButtonDialogflow(Map response) {
     text = response['text'];
@@ -39,9 +39,9 @@ class ButtonDialogflow {
 }
 
 class CardDialogflow {
-  String title;
-  String subtitle;
-  String imageUri;
+  String? title;
+  String? subtitle;
+  String? imageUri;
   List<ButtonDialogflow> buttons = [];
 
   CardDialogflow(Map response) {
@@ -57,9 +57,9 @@ class CardDialogflow {
 }
 
 class SimpleResponse {
-  String textToSpeech;
-  String ssml;
-  String displayText;
+  String? textToSpeech;
+  String? ssml;
+  String? displayText;
 
   SimpleResponse(Map response) {
     this.textToSpeech = response['textToSpeech'];
@@ -82,11 +82,11 @@ class SimpleResponses {
 }
 
 class BasicCardDialogflow {
-  String title;
-  String subtitle;
-  String formattedText;
-  ImageDialogflow image;
-  List<dynamic> buttons;
+  String? title;
+  String? subtitle;
+  String? formattedText;
+  ImageDialogflow? image;
+  List<dynamic>? buttons;
 
   BasicCardDialogflow(Map response) {
     this.title = response['basicCard']['title'];
@@ -99,9 +99,9 @@ class BasicCardDialogflow {
 
 class ItemCarousel {
   dynamic info;
-  String title;
-  String description;
-  ImageDialogflow image;
+  String? title;
+  String? description;
+  ImageDialogflow? image;
   ItemCarousel(Map item) {
     this.info = item['info'];
     this.title = item['title'];
@@ -121,8 +121,8 @@ class CarouselSelect {
 }
 
 class TypeMessage {
-  String platform;
-  String type;
+  String? platform;
+  String? type;
   TypeMessage(Map message) {
     this.platform = message['platform'];
     if (message.containsKey('card')) {

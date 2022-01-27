@@ -7,3 +7,9 @@
 
 * Files formatted according to dartfmt
 * Web supoort added
+
+
+
+## 1.0.0
+
+* Added Null Safety.

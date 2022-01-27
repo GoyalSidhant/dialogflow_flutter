@@ -10,12 +10,12 @@ class AuthGoogle {
   final List<String> scope;
   final String sessionId;
   AuthGoogle(
-      {@required this.fileJson,
+      {required this.fileJson,
       this.scope = const ["https://www.googleapis.com/auth/cloud-platform"],
       this.sessionId = "123"});
 
-  String _projectId;
-  AccessCredentials _credentials;
+  String? _projectId;
+  late AccessCredentials _credentials;
 
   Future<String> getReadJson() async {
     String data = await rootBundle.loadString(this.fileJson);
@@ -40,7 +40,7 @@ class AuthGoogle {
     return sessionId;
   }
 
-  String get getProjectId {
+  String? get getProjectId {
     return _projectId;
   }
 
@@ -49,7 +49,7 @@ class AuthGoogle {
   }
 
   Future<Response> post(url,
-      {Map<String, String> headers, body, Encoding encoding}) async {
+      {Map<String, String>? headers, body, Encoding? encoding}) async {
     if (!hasExpired) {
       return await http.post(Uri.parse(url), headers: headers, body: body);
     } else {

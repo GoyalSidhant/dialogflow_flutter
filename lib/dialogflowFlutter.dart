@@ -6,8 +6,8 @@ import 'dart:io';
 import 'package:meta/meta.dart';
 
 class Intent {
-  String name;
-  String displayName;
+  String? name;
+  String? displayName;
 
   Intent(Map data) {
     name = data["name"];
@@ -16,13 +16,13 @@ class Intent {
 }
 
 class QueryResult {
-  String queryText;
-  String action;
-  Map parameters;
-  bool allRequiredParamsPresent;
-  String fulfillmentText;
-  List<dynamic> fulfillmentMessages;
-  Intent intent;
+  String? queryText;
+  String? action;
+  Map? parameters;
+  bool? allRequiredParamsPresent;
+  String? fulfillmentText;
+  List<dynamic>? fulfillmentMessages;
+  Intent? intent;
 
   QueryResult(Map data) {
     queryText = data["queryText"];
@@ -37,7 +37,7 @@ class QueryResult {
 }
 
 class DiagnosticInfo {
-  String webhookLatencyMs;
+  String? webhookLatencyMs;
 
   DiagnosticInfo(Map response) {
     webhookLatencyMs = response["webhook_latency_ms"];
@@ -45,7 +45,7 @@ class DiagnosticInfo {
 }
 
 class WebhookStatus {
-  String message;
+  String? message;
 
   WebhookStatus(Map response) {
     message = response['message'];
@@ -53,14 +53,14 @@ class WebhookStatus {
 }
 
 class AIResponse {
-  String _responseId;
-  QueryResult _queryResult;
-  num _intentDetectionConfidence;
-  String _languageCode;
-  DiagnosticInfo _diagnosticInfo;
-  WebhookStatus _webhookStatus;
+  String? _responseId;
+  QueryResult? _queryResult;
+  num? _intentDetectionConfidence;
+  String? _languageCode;
+  DiagnosticInfo? _diagnosticInfo;
+  WebhookStatus? _webhookStatus;
 
-  AIResponse({Map body}) {
+  AIResponse({required Map body}) {
     _responseId = body['responseId'];
     _intentDetectionConfidence = body['intentDetectionConfidence'];
     _queryResult = new QueryResult(body['queryResult']);
@@ -73,39 +73,39 @@ class AIResponse {
         : null;
   }
 
-  String get responseId {
+  String? get responseId {
     return _responseId;
   }
 
-  String getMessage() {
-    return _queryResult.fulfillmentText;
+  String? getMessage() {
+    return _queryResult!.fulfillmentText;
   }
 
-  String getWebhookStatusMessage() {
-    return _webhookStatus.message;
+  String? getWebhookStatusMessage() {
+    return _webhookStatus!.message;
   }
 
-  List<dynamic> getListMessage() {
-    return _queryResult.fulfillmentMessages;
+  List<dynamic>? getListMessage() {
+    return _queryResult!.fulfillmentMessages;
   }
 
-  num get intentDetectionConfidence {
+  num? get intentDetectionConfidence {
     return _intentDetectionConfidence;
   }
 
-  String get languageCode {
+  String? get languageCode {
     return _languageCode;
   }
 
-  DiagnosticInfo get diagnosticInfo {
+  DiagnosticInfo? get diagnosticInfo {
     return _diagnosticInfo;
   }
 
-  WebhookStatus get webhookStatus {
+  WebhookStatus? get webhookStatus {
     return _webhookStatus;
   }
 
-  QueryResult get queryResult {
+  QueryResult? get queryResult {
     return _queryResult;
   }
 }
@@ -117,7 +117,7 @@ class DialogFlow {
   final bool resetContexts;
 
   const DialogFlow(
-      {@required this.authGoogle,
+      {required this.authGoogle,
       this.language = "en",
       this.payload = "",
       this.resetContexts = false});
